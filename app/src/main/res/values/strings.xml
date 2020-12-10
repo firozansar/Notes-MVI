@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Roxie</string>
+    <string name="app_name">Notes</string>
     <string name="error_loading_notes">Error loading notes</string>
     <string name="note_detail_id">id: %s</string>
     <string name="note_detail_text">text: %s</string>
