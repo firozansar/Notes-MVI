@@ -4,15 +4,13 @@ import info.firozansari.notes_mvvm.arch.BaseViewModel
 import info.firozansari.notes_mvvm.arch.Reducer
 import info.firozansari.notes_mvvm.domain.GetNoteListUseCase
 import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.rxkotlin.ofType
-import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.schedulers.Schedulers
 import timber.log.Timber
 
 class NoteListViewModel(
     initialNoteDetailState: NoteListState?,
     private val loadNoteListUseCase: GetNoteListUseCase
-) : BaseViewModel<Action, NoteListState>() {
+) : BaseViewModel<NoteListViewEvent, NoteListState>() {
 
     override val initialState = initialNoteDetailState ?: NoteListState(isIdle = true)
 
@@ -40,7 +38,7 @@ class NoteListViewModel(
     }
 
     private fun bindActions() {
-        val loadNotesChange = actions.ofType<Action.LoadNotes>()
+        val loadNotesChange = actions.ofType<NoteListViewEvent.LoadNotes>()
             .switchMap {
                 loadNoteListUseCase.loadAll()
                     .subscribeOn(Schedulers.io())

@@ -58,16 +58,16 @@ class NoteDetailFragment : Fragment() {
         })
 
         if (savedInstanceState == null) {
-            viewModel.dispatch(Action.LoadNoteDetail(noteId))
+            viewModel.dispatch(NoteDetailViewEvent.LoadNoteDetail(noteId))
         }
 
         deleteNoteButton.setOnClickListener {
-            viewModel.dispatch(Action.DeleteNote(noteId))
+            viewModel.dispatch(NoteDetailViewEvent.DeleteNote(noteId))
         }
     }
 
-    private fun renderState(noteDetailState: NoteDetailState) {
-        with(noteDetailState) {
+    private fun renderState(noteDetailViewState: NoteDetailViewState) {
+        with(noteDetailViewState) {
             when {
                 isLoadError -> renderLoadNoteDetailError()
                 isDeleteError -> renderNoteDeleteError()

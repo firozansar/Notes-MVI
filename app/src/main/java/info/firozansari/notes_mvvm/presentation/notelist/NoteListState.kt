@@ -1,6 +1,6 @@
 package info.firozansari.notes_mvvm.presentation.notelist
 
-import info.firozansari.notes_mvvm.arch.BaseState
+import info.firozansari.notes_mvvm.arch.ViewState
 import info.firozansari.notes_mvvm.domain.Note
 
 data class NoteListState(
@@ -8,4 +8,4 @@ data class NoteListState(
     val isIdle: Boolean = false,
     val isLoading: Boolean = false,
     val isError: Boolean = false
-) : BaseState
+) : ViewState

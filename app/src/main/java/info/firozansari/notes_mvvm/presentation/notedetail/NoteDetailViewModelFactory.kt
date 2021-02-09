@@ -21,13 +21,13 @@ import info.firozansari.notes_mvvm.domain.DeleteNoteUseCase
 import info.firozansari.notes_mvvm.domain.GetNoteDetailUseCase
 
 class NoteDetailViewModelFactory(
-    private val initialNoteDetailState: NoteDetailState?,
+    private val initialNoteDetailViewState: NoteDetailViewState?,
     private val noteDetailUseCase: GetNoteDetailUseCase,
     private val deleteNoteUseCase: DeleteNoteUseCase
-) : ViewModelProvider.NewInstanceFactory() {
+) : ViewModelProvider.Factory {
 
     @Suppress("unchecked_cast")
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return NoteDetailViewModel(initialNoteDetailState, noteDetailUseCase, deleteNoteUseCase) as T
+        return NoteDetailViewModel(initialNoteDetailViewState, noteDetailUseCase, deleteNoteUseCase) as T
     }
 }

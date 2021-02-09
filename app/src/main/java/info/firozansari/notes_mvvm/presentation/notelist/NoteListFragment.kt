@@ -47,7 +47,7 @@ class NoteListFragment : Fragment() {
             state?.let { renderState(state) }
         })
 
-        viewModel.dispatch(Action.LoadNotes)
+        viewModel.dispatch(NoteListViewEvent.LoadNotes)
     }
 
     private fun renderState(noteListState: NoteListState) {
