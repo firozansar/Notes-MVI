@@ -5,6 +5,8 @@ import info.firozansari.notes_mvvm.arch.Reducer
 import info.firozansari.notes_mvvm.domain.DeleteNoteUseCase
 import info.firozansari.notes_mvvm.domain.GetNoteDetailUseCase
 import io.reactivex.Observable
+import io.reactivex.rxkotlin.ofType
+import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.schedulers.Schedulers
 import timber.log.Timber
 
@@ -14,7 +16,7 @@ class NoteDetailViewModel(
     private val deleteNoteUseCase: DeleteNoteUseCase
 ) : BaseViewModel<NoteDetailViewEvent, NoteDetailViewState>() {
 
-    val initialState = initialNoteDetailViewState ?: NoteDetailViewState(isIdle = true)
+    override val initialState = initialNoteDetailViewState ?: NoteDetailViewState(isIdle = true)
 
     private val reducer: Reducer<NoteDetailViewState, NoteDetailViewStateChange> = { state, change ->
         when (change) {

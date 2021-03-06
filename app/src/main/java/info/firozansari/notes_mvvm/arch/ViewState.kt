@@ -1,3 +1,6 @@
 package info.firozansari.notes_mvvm.arch
 
-interface ViewState
+interface ViewState {
+
+    fun obfuscatedString() = "${javaClass.simpleName}@${hashCode()}"
+}

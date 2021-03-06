@@ -14,7 +14,7 @@ sealed class NoteDetailViewStateChange : ViewStateChange<NoteDetailViewState> {
 
     data class NoteDetail(val note: Note) : NoteDetailViewStateChange() {
         override fun apply(currentViewState: NoteDetailViewState): NoteDetailViewState {
-
+            TODO("Not yet implemented")
         }
     }
 

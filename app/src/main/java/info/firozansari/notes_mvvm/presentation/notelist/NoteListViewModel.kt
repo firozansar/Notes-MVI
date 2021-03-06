@@ -4,6 +4,8 @@ import info.firozansari.notes_mvvm.arch.BaseViewModel
 import info.firozansari.notes_mvvm.arch.Reducer
 import info.firozansari.notes_mvvm.domain.GetNoteListUseCase
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.rxkotlin.plusAssign
+import io.reactivex.rxkotlin.ofType
 import io.reactivex.schedulers.Schedulers
 import timber.log.Timber
 
