@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Notes-MVVM"
+rootProject.name = "Notes-MVI"
