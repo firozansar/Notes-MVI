@@ -1,4 +1,4 @@
-package info.firozansari.notes_mvvm
+package info.firozansari.notes
 
 import android.app.Application
 import timber.log.Timber

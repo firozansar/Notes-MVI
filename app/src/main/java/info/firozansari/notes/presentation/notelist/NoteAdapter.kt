@@ -1,4 +1,4 @@
-package info.firozansari.notes_mvvm.presentation.notelist
+package info.firozansari.notes.presentation.notelist
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,8 +6,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import info.firozansari.notes_mvvm.R
-import info.firozansari.notes_mvvm.domain.Note
+import info.firozansari.notes.R
+import info.firozansari.notes.domain.Note
 
 typealias ClickListener = (Note) -> Unit
 

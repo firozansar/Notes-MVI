@@ -1,8 +1,8 @@
-package info.firozansari.notes_mvvm
+package info.firozansari.notes
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import info.firozansari.notes_mvvm.presentation.notelist.NoteListFragment
+import info.firozansari.notes.presentation.notelist.NoteListFragment
 
 class MainActivity : AppCompatActivity() {
 

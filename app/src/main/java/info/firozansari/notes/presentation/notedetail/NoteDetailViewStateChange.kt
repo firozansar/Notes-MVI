@@ -1,7 +1,7 @@
-package info.firozansari.notes_mvvm.presentation.notedetail
+package info.firozansari.notes.presentation.notedetail
 
-import info.firozansari.notes_mvvm.arch.ViewStateChange
-import info.firozansari.notes_mvvm.domain.Note
+import info.firozansari.notes.arch.ViewStateChange
+import info.firozansari.notes.domain.Note
 
 sealed class NoteDetailViewStateChange : ViewStateChange<NoteDetailViewState> {
     object Loading : NoteDetailViewStateChange() {

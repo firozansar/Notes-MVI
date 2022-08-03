@@ -1,6 +1,6 @@
-package info.firozansari.notes_mvvm.data
+package info.firozansari.notes.data
 
-import info.firozansari.notes_mvvm.domain.Note
+import info.firozansari.notes.domain.Note
 
 /**
  * Normally we would implement a repository interface which is injected in the Domain layer

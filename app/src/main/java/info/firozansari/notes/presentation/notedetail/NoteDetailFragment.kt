@@ -1,4 +1,4 @@
-package info.firozansari.notes_mvvm.presentation.notedetail
+package info.firozansari.notes.presentation.notedetail
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import info.firozansari.notes_mvvm.R
-import info.firozansari.notes_mvvm.domain.DeleteNoteUseCase
-import info.firozansari.notes_mvvm.domain.GetNoteDetailUseCase
-import info.firozansari.notes_mvvm.domain.Note
+import info.firozansari.notes.R
+import info.firozansari.notes.domain.DeleteNoteUseCase
+import info.firozansari.notes.domain.GetNoteDetailUseCase
+import info.firozansari.notes.domain.Note
 import kotlinx.android.synthetic.main.note_detail.*
 
 private const val NOTE_ID = "noteId"

@@ -1,8 +1,8 @@
-package info.firozansari.notes_mvvm.presentation.notelist
+package info.firozansari.notes.presentation.notelist
 
-import info.firozansari.notes_mvvm.arch.BaseViewModel
-import info.firozansari.notes_mvvm.arch.Reducer
-import info.firozansari.notes_mvvm.domain.GetNoteListUseCase
+import info.firozansari.notes.arch.BaseViewModel
+import info.firozansari.notes.arch.Reducer
+import info.firozansari.notes.domain.GetNoteListUseCase
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.rxkotlin.ofType

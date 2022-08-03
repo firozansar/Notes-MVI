@@ -1,4 +1,4 @@
-package info.firozansari.notes_mvvm
+package info.firozansari.notes
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

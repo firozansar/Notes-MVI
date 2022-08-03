@@ -1,7 +1,7 @@
-package info.firozansari.notes_mvvm.presentation.notelist
+package info.firozansari.notes.presentation.notelist
 
-import info.firozansari.notes_mvvm.arch.ViewState
-import info.firozansari.notes_mvvm.domain.Note
+import info.firozansari.notes.arch.ViewState
+import info.firozansari.notes.domain.Note
 
 data class NoteListState(
     val notes: List<Note> = listOf(),

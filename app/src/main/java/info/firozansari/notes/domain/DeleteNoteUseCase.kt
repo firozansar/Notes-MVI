@@ -1,6 +1,6 @@
-package info.firozansari.notes_mvvm.domain
+package info.firozansari.notes.domain
 
-import info.firozansari.notes_mvvm.data.NoteRepository
+import info.firozansari.notes.data.NoteRepository
 import io.reactivex.Completable
 
 class DeleteNoteUseCase {

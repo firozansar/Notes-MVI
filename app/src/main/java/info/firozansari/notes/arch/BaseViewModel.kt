@@ -1,4 +1,4 @@
-package info.firozansari.notes_mvvm.arch
+package info.firozansari.notes.arch
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData

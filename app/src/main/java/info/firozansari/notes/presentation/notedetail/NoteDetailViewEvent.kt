@@ -1,6 +1,6 @@
-package info.firozansari.notes_mvvm.presentation.notedetail
+package info.firozansari.notes.presentation.notedetail
 
-import info.firozansari.notes_mvvm.arch.ViewEvent
+import info.firozansari.notes.arch.ViewEvent
 
 sealed class NoteDetailViewEvent : ViewEvent {
 

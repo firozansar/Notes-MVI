@@ -1,3 +1,3 @@
-package info.firozansari.notes_mvvm.arch
+package info.firozansari.notes.arch
 
 interface ViewEvent

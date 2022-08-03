@@ -1,7 +1,7 @@
-package info.firozansari.notes_mvvm.presentation.notelist
+package info.firozansari.notes.presentation.notelist
 
 import androidx.recyclerview.widget.DiffUtil
-import info.firozansari.notes_mvvm.domain.Note
+import info.firozansari.notes.domain.Note
 
 class ItemDiffCallback(
     private val old: List<Note>,

@@ -1,4 +1,4 @@
-package info.firozansari.notes_mvvm.arch
+package info.firozansari.notes.arch
 
 data class ViewStateEvent(private var consumed: Boolean = false) {
 

@@ -1,6 +1,6 @@
-package info.firozansari.notes_mvvm.presentation.notelist
+package info.firozansari.notes.presentation.notelist
 
-import info.firozansari.notes_mvvm.domain.Note
+import info.firozansari.notes.domain.Note
 
 sealed class Change {
     object Loading : Change()

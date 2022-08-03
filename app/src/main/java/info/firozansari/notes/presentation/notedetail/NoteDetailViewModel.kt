@@ -1,9 +1,9 @@
-package info.firozansari.notes_mvvm.presentation.notedetail
+package info.firozansari.notes.presentation.notedetail
 
-import info.firozansari.notes_mvvm.arch.BaseViewModel
-import info.firozansari.notes_mvvm.arch.Reducer
-import info.firozansari.notes_mvvm.domain.DeleteNoteUseCase
-import info.firozansari.notes_mvvm.domain.GetNoteDetailUseCase
+import info.firozansari.notes.arch.BaseViewModel
+import info.firozansari.notes.arch.Reducer
+import info.firozansari.notes.domain.DeleteNoteUseCase
+import info.firozansari.notes.domain.GetNoteDetailUseCase
 import io.reactivex.Observable
 import io.reactivex.rxkotlin.ofType
 import io.reactivex.rxkotlin.plusAssign

@@ -1,4 +1,4 @@
-package info.firozansari.notes_mvvm.presentation.notelist
+package info.firozansari.notes.presentation.notelist
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,10 +9,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import info.firozansari.notes_mvvm.R
-import info.firozansari.notes_mvvm.domain.GetNoteListUseCase
-import info.firozansari.notes_mvvm.domain.Note
-import info.firozansari.notes_mvvm.presentation.notedetail.NoteDetailFragment
+import info.firozansari.notes.R
+import info.firozansari.notes.domain.GetNoteListUseCase
+import info.firozansari.notes.domain.Note
+import info.firozansari.notes.presentation.notedetail.NoteDetailFragment
 import kotlinx.android.synthetic.main.note_list.*
 
 class NoteListFragment : Fragment() {
