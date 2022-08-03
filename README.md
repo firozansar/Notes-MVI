@@ -1,4 +1,4 @@
-# Notes MVVM
+# Notes MVI
 
 Notes-MVVM implements Unidirectional Data Flow (UDF) concepts introduced by [Redux](https://redux.js.org/). The core idea is that user Actions get dispatched to a Store (State container) which uses Reducers to transform them into States. In Android world, this design pattern is known as MVI (Model-View-Intent) where Model describes State and Intent describes user interaction.
 
